@@ -44,7 +44,7 @@ class Projects extends Component {
           <a href="https://github.com/hlhartley/terminal-commander" target="_blank"><img className="project-img" src={require("../assets/terminal-commander.png")} /></a>
           <div className="buttons-container">
             <a href="https://github.com/hlhartley/terminal-commander" target="_blank" className="button-link">GitHub</a>
-            <a href="https://terminal-commander.herokuapp.com/" target="_blank" className="button-link">App</a>
+            <a href="http://terminal-commander.s3-website-us-west-2.amazonaws.com/" target="_blank" className="button-link">App</a>
           </div>
         </div>
         <div className="project" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-duration="500" data-aos-once="true" data-aos-delay="150">
