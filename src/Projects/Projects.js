@@ -12,24 +12,31 @@ class Projects extends Component {
   render() {
     return (
       <div className="projects-container">
-        <div className="project">
-          <a href="https://github.com/hlhartley/listy" target="_blank"><img className="project-img" src={require("../assets/listy-ss.png")} /></a>
+        <div className="project" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-duration="500" data-aos-once="true" data-aos-delay="150">
+          <a href="https://github.com/hlhartley/blackjack" target="_blank"><img className="project-img" src={require("../assets/blackjack_desktop.png")} /></a>
           <div className="buttons-container">
-            <a href="https://github.com/hlhartley/listy" target="_blank" className="button-link">GitHub</a>
-            <div className="disabled-button">App</div>
+            <a href="https://github.com/hlhartley/blackjack" target="_blank" className="button-link">GitHub</a>
+            <a href="http://blackjack-game-react.s3-website-us-west-2.amazonaws.com/" target="_blank" className="button-link">App</a>
+          </div>
+        </div>
+        <div className="project" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-duration="500" data-aos-once="true" data-aos-delay="150">
+          <a href="https://github.com/hlhartley/the-greeda" target="_blank"><img className="project-img" src={require("../assets/The_Greeda_Homepage_desktop.png")} /></a>
+          <div className="buttons-container">
+            <a href="https://github.com/hlhartley/the-greeda" target="_blank" className="button-link">GitHub</a>
+            <a href="http://the-greeda.s3-website.ap-northeast-2.amazonaws.com/" target="_blank" className="button-link">App</a>
           </div>
         </div>
         <div className="project" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-duration="500" data-aos-once="true" data-aos-delay="150">
           <a href="https://github.com/hlhartley/hlhartley-word-war-1" target="_blank"><img className="project-img" src={require("../assets/word-war-1.png")} /></a>
           <div className="buttons-container">
             <a href="https://github.com/hlhartley/hlhartley-word-war-1" target="_blank" className="button-link">GitHub</a>
-            <a href="https://ecstatic-lalande-0e780a.netlify.app/" target="_blank" className="button-link">App</a>
+            <div className="disabled-button">App</div>
           </div>
         </div>
-        <div className="project" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-duration="500" data-aos-once="true" data-aos-delay="150">
-          <a href="https://github.com/hlhartley/movie-tracker-app" target="_blank"><img className="project-img" src={require("../assets/movie-tracker.png")} /></a>
+        <div className="project">
+          <a href="https://github.com/hlhartley/listy" target="_blank"><img className="project-img" src={require("../assets/listy-ss.png")} /></a>
           <div className="buttons-container">
-            <a href="https://github.com/hlhartley/movie-tracker-app" target="_blank" className="button-link">GitHub</a>
+            <a href="https://github.com/hlhartley/listy" target="_blank" className="button-link">GitHub</a>
             <div className="disabled-button">App</div>
           </div>
         </div>
@@ -48,10 +55,17 @@ class Projects extends Component {
           </div>
         </div>
         <div className="project" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-duration="500" data-aos-once="true" data-aos-delay="150">
+          <a href="https://github.com/hlhartley/movie-tracker-app" target="_blank"><img className="project-img" src={require("../assets/movie-tracker.png")} /></a>
+          <div className="buttons-container">
+            <a href="https://github.com/hlhartley/movie-tracker-app" target="_blank" className="button-link">GitHub</a>
+            <div className="disabled-button">App</div>
+          </div>
+        </div>
+        <div className="project" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-duration="500" data-aos-once="true" data-aos-delay="150">
           <a href="https://github.com/hlhartley/palette-picker" target="_blank"><img className="project-img" src={require("../assets/palit.png")} /></a>
           <div className="buttons-container">
             <a href="https://github.com/hlhartley/palette-picker" target="_blank" className="button-link">GitHub</a>
-            <a href="https://palit-picker.herokuapp.com/" target="_blank" className="button-link">App</a>
+            <div className="disabled-button">App</div>
           </div>
         </div>
         <div className="project" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-duration="500" data-aos-once="true" data-aos-delay="150">
