@@ -5,16 +5,14 @@ class Contact extends Component {
     constructor () {
         super()
       }
-      componentDidMount() {
-        console.log('contact', document.querySelector('.contact-container').offsetTop)
-      }
+
 	render() {
 		return (
 			<div className="contact-container">
         <div className="contact-info-container">
-          <div className="contact-email"><i class="fas fa-envelope"></i> hlhartley@gmail.com</div>
-          <div><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/heatherleehartley/" target="_blank" className="link">heatherleehartley</a></div>
-          <div><i class="fab fa-github"></i> <a href="https://github.com/hlhartley" target="_blank" className="link">hlhartley</a></div>
+          <div className="contact-email" title='hlhartley@gmail.com'><i class="fas fa-envelope"></i></div>
+          <div><i class="fab fa-linkedin" title="heatherleehartley"></i> <a href="https://www.linkedin.com/in/heatherleehartley/" target="_blank" className="link"></a></div>
+          <div><i class="fab fa-github" title="hlhartley"></i> <a href="https://github.com/hlhartley" target="_blank" className="link"></a></div>
         </div>
     </div>
 		);

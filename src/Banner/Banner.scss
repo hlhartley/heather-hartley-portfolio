@@ -1,66 +1,91 @@
-.description_container {
-  font-size: 20px;
-  height: 75vh;
-  width: 100%;
+.top-banner {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  margin: 0 15px;
+}
+
+.title-text {
+  font-size: 65px;
+  padding: 15px 0;
+  font-weight: bold;;
+}
+
+.line-spacer {
+  height: 1px;
+  background-color: #ddd;
+  margin: 3px;
+  border: none;
+}
+
+.description_container {
+  font-size: 20px;
+  width: 100%;
+  display: flex;
   line-height: 35px;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   letter-spacing: 1.5px;
-  padding: 0;
   margin: 0;
-  background-image: url('./assets/road-trip.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  color: white;
-  opacity: 0.95;
-  text-align: center;
-  
+  color: black;
+
+  @media only screen and (min-width: 1024px) {
+    padding: 55px 10px;
+  }
+
   .profile-container {
+    width: 50%;
+  }
+
+  .name-text {
+    font-weight: bold;
+  }
+
+  .about-text {
+    width: 45%;
+    font-size: 28px;
     display: flex;
-    width: 40%;
+    justify-content: flex-start;
+    font-weight: bold;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
 
-    h1 {
-      font-size: 55px;
-      letter-spacing: 0.15em;
+    @media only screen and (max-width: 700px) {
+      display: none;
+    }
+  }
+
+  .about-text-description {
+    padding-bottom: 15px;
+    background: linear-gradient(to bottom, #111, #ddd); /* dark to light */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text; /* for Firefox */
+    color: transparent;
+
+    @media only screen and (min-width: 700px) {
+      font-size: 22px;
     }
 
-    small {
-      font-size: 16px;
-      text-transform: uppercase;
-      font-weight: bold;
-    }
+     @media only screen and (min-width: 1600px) {
+      font-size: 27px;
+     }
   }
 
   @media only screen and (max-width: 1025px) {
     .profile-container {
-      width: 100%;
-      
-      h1 {
-        font-size: 35px;
-      }
-      
-      small {
-        font-size: 14px;
-      }
-      
-      .about-text {
-        padding: 0 20px;
-        font-size: 18px;
-      }
+      width: 50%;
     }
   }
 
-  @media only screen and (max-width: 480px) {
-    height: 87vh;
+  @media only screen and (max-width: 700px) {
+    padding: 0;
+    .profile-container {
+      width: 100%;
+      padding: 10px;
+    }
 
-    .about-text {
-      display: none;
+    .title-text {
+      font-size: 20px;
     }
   }
 }

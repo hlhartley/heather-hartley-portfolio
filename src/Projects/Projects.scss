@@ -1,25 +1,79 @@
 .projects-container {
+  grid-template-columns: repeat(1, 1fr);
   font-size: 20px;
   background-color: #e9e9eb; 
   display: grid;
+  grid-gap: 5px;
   width: 100%;
   justify-content: center;
   align-items: center;
+
+  .project {
+    position: relative;
+    overflow: hidden; // ensures nothing spills out
+
+    .project-img {
+      height: 175px;
+      width: 300px;
+      border-style: solid;
+      border-top-width: 115px;
+      border-bottom-width: 115px;
+      border-left-width: 25px;
+      border-right-width: 25px;
+      margin-top: 20px;
+      transition: transform 0.3s ease; 
+    }
+
+    .arrow-button {
+      position: absolute;
+      bottom: 15px;
+      right: 15px;
+      background: rgba(0,0,0,0.6);
+      color: #fff;
+      border: none;
+      padding: 8px 12px;
+      border-radius: 50%;
+      font-size: 20px;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s ease;
+      cursor: pointer;
+
+      @media screen and (min-width: 1600px) {
+        bottom: 30px;
+        right: 50px;
+      }
+    }
+
+    &:nth-child(4n + 1) .project-img { border-color: #f2e398; }
+    &:nth-child(4n + 2) .project-img { border-color: #e2dad4; }
+    &:nth-child(4n + 3) .project-img { border-color: #808175; }
+    &:nth-child(4n + 4) .project-img { border-color: black; }
+    &:nth-child(4n + 5) .project-img { border-color:  #f4f1e7; }
+    &:nth-child(4n + 6) .project-img { border-color: #f2e398; }
+    &:nth-child(4n + 7) .project-img { border-color:  #e2dad4; }
+    &:nth-child(4n + 8) .project-img { border-color:  #808175; }
+    &:nth-child(4n + 9) .project-img { border-color:  #f4f1e7; }
+    &:nth-child(4n + 10) .project-img { border-color: black; }
+
+    &:hover {
+      .project-img {
+        transform: scale(1.05); // zoom in 5%
+      }
+      .arrow-button {
+        opacity: 1;
+        pointer-events: auto; // make clickable on hover
+      }
+    }
+  }
 }
 
-.project-img {
-  height: 500px;
-  width: 850px;
-  border: 35px solid #3f3f40;
-  border-radius: 25px;
-  margin-top: 20px;
-}
 
 .project-phone-img {
   height: 425px;
-  width: 265px;
-  margin: 20px 20px 0 20px;
-  border: 18px solid #3f3f40;
+  width: 250px;
+  margin: 5px;
+  border: 5px solid #3f3f40;
   border-radius: 25px;
 }
 
@@ -51,7 +105,6 @@
 }
 
 .button-link:hover {
-  font-size: 19px;
   color: #cbcbcb;
 }
 
@@ -82,16 +135,50 @@
 
 a:active, a:hover, a, a:visited {
   text-decoration: none;
-  font-size: 17px;
 }
 
-@media screen and (max-width: 1200px) {
-  .project-img {
-    height: 375px;
-    width: 640px;
-    margin-top: 10px;
-    border: 35px solid #3f3f40;
-    border-radius: 25px;
+@media screen and (min-width: 700px) {
+  .projects-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+  .projects-container {
+      grid-template-columns: repeat(3, 1fr);
+      .project {
+        .project-img {
+          height: 275px;
+          width: 400px;
+          border-top-width: 115px;
+          border-bottom-width: 115px;
+          border-left-width: 25px;
+          border-right-width: 25px;
+        }
+      }
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .projects-container {
+      grid-template-columns: repeat(4, 1fr);
+      .project {
+        .project-img {
+          height: 350px;
+          width: 500px;
+          border-top-width: 115px;
+          border-bottom-width: 115px;
+          border-left-width: 25px;
+          border-right-width: 25px;
+        }
+
+      }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+  .about-text-description {
+    font-size: 24px;
   }
 
   .button-link, .disabled-button {
@@ -99,32 +186,21 @@ a:active, a:hover, a, a:visited {
   }
 }
 
-@media screen and (max-width: 1024px) {
-  .button-link, .disabled-button {
-    font-size: 16px;
-  }
-}
-
-@media screen and (max-width: 700px) {
-  .project-img {
-    height: 195px;
-    width: 318px;
-    border: 25px solid #3f3f40;
-    border-radius: 25px;
-  }
-
+@media screen and (min-width: 700px) {
   .project-phone-img {
-    height: 150px;
-    width: 84px;
+    height: 350px;
+    width: 175px;
     margin-top: 20px;
     margin-right: 15px;
-    border: 18px solid #3f3f40;
+    border: 5px solid #3f3f40;
     border-radius: 25px;
   }
 }
 
 @media screen and (max-width: 991px) {
-  .project-img {
-    width: 80vw;
+  .project {
+    .project-img {
+      width: 80vw;
+    }
   }
 }
