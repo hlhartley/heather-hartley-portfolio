@@ -7,5 +7,4 @@ A website about me as a frontend engineer and UI/UX developer, including my work
 
 ### Screenshots:
 ![Desktop Screenshot](Updated_Portfolio_Desktop.png)
-![Ipad Screenshot](Updated_Portfolio_Ipad.png)
 
