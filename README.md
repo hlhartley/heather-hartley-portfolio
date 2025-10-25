@@ -6,4 +6,4 @@ A website about me as a front-end engineer, including my work/projects.
 [My Portfolio](http://heather-hartley-portfolio.s3-website-us-west-2.amazonaws.com/)
 
 ### Screenshots:
-![Desktop Screenshot](Portfolio_Desktop.png)
+![Desktop Screenshot](Updated_Portfolio_Desktop.png)
