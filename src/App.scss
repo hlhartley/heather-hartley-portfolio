@@ -15,38 +15,9 @@
   z-index: 1;
 }
 
-.nav-link, .nav-link:visited {
-  color: white;
-  text-decoration: none;
-}
-
-.fixed-nav {
-  position: fixed;
-  box-shadow: 0 5px rgba(0, 0, 0, 0.1);
-  background-color: #7e556a;
-  width: 100%;
-}
-
-.nav-link {
-  padding-right: 15px;
-  font-weight: 600;
-  letter-spacing: .5px;
-}
-
-.nav-link:hover {
-  color: #cbcbcb;
-}
-
-.nav-link-container {
-  display: flex;
-}
-
 @media screen and (max-width: 480px) {
-  .nav-link {
-    font-size: 16px;
-  }
-
   .fixed-nav .logo {
     max-width: 0;
   }
 }
+

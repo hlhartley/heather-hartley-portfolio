@@ -9,48 +9,88 @@ class AddingBrandsModal extends Component {
 
   render() {
     return (
-      <div className="adding-brands-modal-container">
-        <div className="project-title">
+      <div className="feature-product-container">
+        <div className="feature-project-title">
           <div>
-            <span className="project-number">02</span> Adding Brands Modal
+            <span className="feature-project-number">02</span> Adding Brands Modal
           </div>
-          <Link className="nav-link" to="/home">
+          <Link to="/home">
             <button className="arrow-button"><i className="fas fa-home"></i></button>
           </Link>
         </div>
         <div className='line-spacer'></div>
-        <div className='mobile-dashboard-description'>
-          <div className='info-section'>
+        <div className='line-spacer'></div>
+        <div className='feature-product-description'>
+          <div className='feature-product-info-section'>
+              <div className="feature-project-text">
+              <div>I designed and developed a multi-step modal to streamline the process of adding new brands, replicating existing settings, and onboarding users. The feature included six steps with optional paths, handling over 60 mockups and interactive prototypes, and was completed end-to-end in five weeks.</div>
+            </div>
             <div className='info-row'>
-              <div className='info-label'>Audience</div>
-              <div>Text</div>
+              <div className='info-label'>Target Audience</div>
+              <div>
+                <ul>
+                  <li>Marketing agencies and social media managers managing multiple brands.</li>
+                  <li>Needed a fast and error-free way to add brands and replicate settings.</li>
+                </ul>
+              </div>
             </div>
             <div className='line-spacer'></div>
             <div className='info-row'>
-              <div className='info-label'>Purpose/Problem</div>
-              <div>Text</div>
+              <div className='info-label'>Purpose</div>
+              <div>
+                <ul>
+                  <li>Previously, adding new brands was complex and time-consuming.</li>
+                  <li>Copying settings, schedules, categories, and inviting users required many manual steps.</li>
+                </ul>
+              </div>
             </div>
             <div className='line-spacer'></div>
             <div className='info-row'>
               <div className='info-label'>Role</div>
-              <div>Text</div>
+              <ul>
+                <li>Designed and built the entire feature, from mockups to front-end implementation.</li>
+                <li>Created 60+ Figma mockups and interactive prototypes.</li>
+                <li>Built modular, maintainable front-end components handling multiple options, inputs, and toggles.</li>
+                <li>Iterated on designs based on stakeholder feedback via Figma comments.</li>
+                <li>Implemented optional skip functionality across 6-step workflow.</li>
+              </ul>
             </div>
             <div className='line-spacer'></div>
             <div className='info-row'>
               <div className='info-label'>Constraints</div>
-              <div>Text</div>
+              <div>
+                <ul>
+                  <li>5-week timeline.</li>
+                  <li>Multiple optional steps with intricate interactions.</li>
+                  <li>Needed usability and flexibility without increasing errors.</li>
+                </ul>
+              </div>
+            </div>
+            <div className='line-spacer'></div>
+            <div className='info-row'>
+              <div className='info-label'>Process</div>
+              <div>
+                <ol>
+                  <li>Mapped the 6-step workflow with optional paths.</li>
+                  <li>Designed high-fidelity mockups and prototypes in Figma.</li>
+                  <li>Iterated based on leadership and stakeholder feedback.</li>
+                  <li>Built front-end components for conditional flows, inputs, and toggles.</li>
+                  <li>Conducted QA and usability testing before launch.</li>
+                </ol>
+              </div>
             </div>
             <div className='line-spacer'></div>
             <div className='info-row'>
               <div className='info-label'>Result</div>
-              <div>Text</div>
+              <ul>
+                <li>Delivered fully functional modal in 5 weeks.</li>
+                <li>Simplified onboarding and setup for new brands.</li>
+                <li>Reduced time and errors, improving user efficiency and satisfaction.</li>
+              </ul>
             </div>
-            <div className="project-text">
-            <div>Test text goes here. Test text goes here. Test text goes here. Test text goes here. Test text goes here. Test text goes here.Test text goes here.Test text goes here.Test text goes here.vTest text goes here. Test text goes here. Test text goes here. Test text goes here.</div>
           </div>
-          </div>
-          <div className='project-screenshot'>
-            <img className="project-img" src={require("../assets/AllAddingBrandModalMockups.png")} />
+            <div className='feature-project-screenshot'>
+            <img className="feature-project-img" src={require("../assets/AddingBrandsModalWhiteBg.png")} />
           </div>
         </div>
       </div>

@@ -14,7 +14,7 @@ class Projects extends Component {
             <div>
               <div className="project-title"><span className="project-number">01</span> Mobile Dashboard</div>
               <img className="project-img" src={require("../assets/MobileDashboardMockups.png")} />
-              <Link className="nav-link" to="/mobile-dashboard">
+              <Link to="/mobile-dashboard">
                 <button className="arrow-button">→</button>
               </Link>
             </div>
@@ -23,7 +23,7 @@ class Projects extends Component {
             <div>
               <div className="project-title"><span className="project-number">02</span> Adding Brands Modal</div>
               <img className="project-img" src={require("../assets/AddingBrandsModalMockups.png")} />
-              <Link className="nav-link" to="/adding-brands-modal">
+              <Link to="/adding-brands-modal">
                 <button className="arrow-button">→</button>
               </Link>
             </div>
@@ -32,7 +32,7 @@ class Projects extends Component {
             <div>
               <div className="project-title"><span className="project-number">03</span> White Label Landing Page</div>
               <img className="project-img" src={require("../assets/WhiteLabelLandingPage1.png")} />
-              <Link className="nav-link" to="/white-label-landing-page">
+              <Link to="/white-label-landing-page">
                 <button className="arrow-button">→</button>
               </Link>
             </div>
