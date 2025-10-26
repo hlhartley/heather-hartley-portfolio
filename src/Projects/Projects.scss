@@ -12,6 +12,20 @@
     position: relative;
     overflow: hidden; // ensures nothing spills out
 
+    .project-title {
+      font-size: 15px;
+      letter-spacing: 1px;
+      display: flex;
+      justify-content: flex-start;
+      width: 100%;
+      color: black;
+    }
+
+    .project-number {
+      font-weight: bold;
+      margin-right: 8px;
+    }
+
     .project-img {
       height: 175px;
       width: 300px;
@@ -26,8 +40,8 @@
 
     .arrow-button {
       position: absolute;
-      bottom: 15px;
-      right: 15px;
+      bottom: 20px;
+      right: 25px;
       background: rgba(0,0,0,0.6);
       color: #fff;
       border: none;
@@ -148,8 +162,8 @@ a:active, a:hover, a, a:visited {
       grid-template-columns: repeat(3, 1fr);
       .project {
         .project-img {
-          height: 275px;
-          width: 400px;
+          height: 240px;
+          width: 375px;
           border-top-width: 115px;
           border-bottom-width: 115px;
           border-left-width: 25px;
@@ -189,7 +203,7 @@ a:active, a:hover, a, a:visited {
 @media screen and (min-width: 700px) {
   .project-phone-img {
     height: 350px;
-    width: 175px;
+    width: 165px;
     margin-top: 20px;
     margin-right: 15px;
     border: 5px solid #3f3f40;

@@ -25,6 +25,9 @@ class Banner extends Component {
           <div className='profile-container'>
             <div className='name-text'>Heather Hartley</div>
             <small>Frontend Engineer | UI/UX Developer</small>
+            {/* <div>
+              <img className='profile-pic' src={require("../assets/Profile_Pic2.png")} />
+            </div> */}
           </div>
           <div className="about-text">
             <div className='about-text-description'>Over five years of experience building secure, scalable, and high-performance user interfaces with Angular, React, and TypeScript. Experienced in owning customer-facing features, modernizing codebases, and collaborating across teams to deliver solutions to thousands of users.</div>
