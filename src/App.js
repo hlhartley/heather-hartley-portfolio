@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import './main.scss';
-import Banner from './Banner/Banner';
-import Projects from './Projects/Projects';
-import Contact from './Contact/Contact';
+import Home from './Home/Home';
+import MobileDashboard from './Projects/MobileDashboard';
+import AddingBrandsModal from './Projects/AddingBrandsModal';
+import WhiteLabelLandingPage from './Projects/WhiteLabelLandingPage';
+import { Routes, Route } from "react-router-dom";
 
 class App extends Component {
   constructor() {
@@ -13,36 +15,30 @@ class App extends Component {
     }
   }
 
-  // componentDidMount() {
-  //   const nav = document.querySelector('.navigation-container')
-  //   window.addEventListener('scroll', this.fixNav.bind(this))
-  //   this.setState({initialNavPosition: nav.offsetTop})
-  //   }
-
-  // fixNav() {
-  //   if(window.scrollY > this.state.initialNavPosition) {
-  //       this.setState({navFixed: true})
-  //   } else {
-  //       this.setState({navFixed: false})
-  //   }
-  // }
-
   render() {
+    const dateToday = () => {
+      const today = new Date();
+      return(
+        <div className='title-text'>
+          {`${String(today.getMonth() + 1).padStart(2, '0')}.${String(today.getDate()).padStart(2, '0')}.${String(today.getFullYear()).slice(-2)}`}
+        </div>
+      )
+    }
     return (
-      <div className="App" id="app">
-        {/* <div className= { this.state.navFixed ? "navigation-container fixed-nav" : "navigation-container" }>
-          <div className='nav-link-container'>
-            <div><a href="#app" className="nav-link">Home</a></div>
-            <div><a href="#contact" className="nav-link">Contact</a></div>
-          </div>
-        </div> */}
-        <div id="banner">
-          <Banner />
+        <div className="App" id="app">
+          <div className="top-banner">
+          {dateToday()}
+          <div className='line-spacer'></div>
+          <div className='line-spacer'></div>
         </div>
-        <div id="projects">
-          <Projects />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route exact path='/mobile-dashboard' element={< MobileDashboard />}></Route>
+          <Route exact path='/adding-brands-modal' element={< AddingBrandsModal />}></Route>
+          <Route exact path='/white-label-landing-page' element={< WhiteLabelLandingPage />}></Route>
+          <Route path="*" element={<Home />} />
+        </Routes>
         </div>
-      </div>
     );
   }
 }
