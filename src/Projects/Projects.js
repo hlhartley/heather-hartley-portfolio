@@ -31,7 +31,7 @@ class Projects extends Component {
           <div className="project" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-duration="500" data-aos-once="true" data-aos-delay="150">
             <div>
               <div className="project-title"><span className="project-number">03</span> White Label Landing Page</div>
-              <img className="project-img" src={require("../assets/WhiteLabelLandingPageMockup.png")} />
+              <img className="project-img" src={require("../assets/WhiteLabelLandingPage1.png")} />
               <Link className="nav-link" to="/white-label-landing-page">
                 <button className="arrow-button">→</button>
               </Link>
@@ -48,7 +48,7 @@ class Projects extends Component {
           </div>
           <div className="project" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-duration="500" data-aos-once="true" data-aos-delay="150">
             <div>
-              <div className="project-title"><span className="project-number">05</span> Custom Beauty Webpage</div>
+              <div className="project-title"><span className="project-number">05</span> Beauty Shop Webpage</div>
               <img className="project-img" src={require("../assets/The_Greeda_Homepage_desktop.png")} />
               <a href="https://github.com/hlhartley/the-greeda" target="_blank">
                 <button className="arrow-button">→</button>

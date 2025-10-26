@@ -41,7 +41,7 @@
     .arrow-button {
       position: absolute;
       bottom: 20px;
-      right: 35px;
+      right: 40px;
       background: rgba(0,0,0,0.6);
       color: #FFF;
       border: none;
@@ -164,8 +164,8 @@ a:active, a:hover, a, a:visited {
       grid-template-columns: repeat(3, 1fr);
       .project {
         .project-img {
-          height: 240px;
-          width: 375px;
+          height: 230px;
+          width: 355px;
           border-top-width: 115px;
           border-bottom-width: 115px;
           border-left-width: 25px;
